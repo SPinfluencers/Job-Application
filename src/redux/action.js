@@ -67,7 +67,7 @@ const getFilterFail = () => {
 const getData = (payload) => {
     return(dispatch) => {
         dispatch(getCompanyReq());
-        axios.get("https://floating-crag-24295.herokuapp.com/company",payload).then((res) => dispatch(getCompanySuccess(res.data))).catch((e) => dispatch(getCompanyFail()))
+        axios.get("https://young-ridge-47280.herokuapp.com/componyprofile",payload).then((res) => dispatch(getCompanySuccess(res.data))).catch((e) => dispatch(getCompanyFail()))
 
     }
 }
@@ -76,7 +76,7 @@ const getData = (payload) => {
 export const postData = (payload) => {
   return(dispatch) => {
       dispatch(postCompanyReq());
-      axios.post(`https://floating-crag-24295.herokuapp.com/company`,payload).then((res) => dispatch(postCompanySuccess(res.data))).catch((e) => dispatch(postCompanyFail()))              
+      axios.post(`https://young-ridge-47280.herokuapp.com/componyprofile`,payload).then((res) => dispatch(postCompanySuccess(res.data))).catch((e) => dispatch(postCompanyFail()))              
 
   }
 }
@@ -84,7 +84,7 @@ export const postData = (payload) => {
 export const getFilterData = (searchBy,company) => {
   return(dispatch) => {
       dispatch(getFilterReq());
-      axios.get(`https://floating-crag-24295.herokuapp.com/company?${searchBy}=${company}`).then((res) => dispatch(getFilterSuccess(res.data))).catch((e) => dispatch(getFilterFail()))              
+      axios.get(`https://young-ridge-47280.herokuapp.com/componyprofile?${searchBy}=${company}`).then((res) => dispatch(getFilterSuccess(res.data))).catch((e) => dispatch(getFilterFail()))              
 
   }
 }
