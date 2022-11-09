@@ -10,7 +10,7 @@ const Users = () => {
   const [search, setSearch] = useState();
   const [searchData, setSearchData] = useState();
   const [filterCon, setFilterCon] = useState();
-  var compData = useSelector((state) => state.componyprofile);
+  var compData = useSelector((state) => state.company);
   const dispatch = useDispatch();
 
   useEffect(() => {

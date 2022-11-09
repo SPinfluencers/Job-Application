@@ -20,4 +20,4 @@
 - https://young-ridge-47280.herokuapp.com/componyprofile
 
 # Deployment 
-- https://lucky-cactus-2a1d23.netlify.app/
+- https://lovely-biscuit-1a70ef.netlify.app/
